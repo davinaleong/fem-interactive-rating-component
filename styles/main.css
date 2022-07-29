@@ -1,6 +1,8 @@
 /* Sections
     - Root
     - Content
+      - Content - General Styling
+      - Content - Form Inputs
     - Utility
       - Utility - Colours
       - Utility - Background Colours
@@ -61,8 +63,6 @@
 body {
   font-size: var(--fs-base);
   font-family: var(--ff-body);
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-900);
   width: 100vw;
   min-height: 100vh;
   display: grid;
@@ -72,8 +72,47 @@ body {
   padding: var(--size-400);
 }
 
+main {
+  max-width: 20rem;
+}
+
 .flow * + * {
-  margin-top: var(--flow-spacer, 1.5em);
+  margin-top: var(--flow-spacer, 1.2em);
+}
+
+.form-section {
+  display: block;
+}
+
+.form-section[data-close] {
+  display: none;
+}
+
+.thank-you-section {
+  display: none;
+}
+
+.thank-you-section[data-open] {
+  display: block;
+}
+
+.thank-you-image {
+  max-width: 8em;
+  margin-inline: auto;
+}
+
+/** Content - Form Inputs **/
+.form-button {
+  display: block;
+  width: 100%;
+  padding: var(--size-200) var(--size-300);
+  border-radius: 100vmax;
+  border: none;
+  text-transform: uppercase;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  font-size: var(--fs-200);
+  letter-spacing: 0.2em;
 }
 
 /** Content - End **/
@@ -92,14 +131,14 @@ body {
 }
 
 /** Utility - Colours **/
-.text-primary-100 {
-  color: var(--clr-primary-100);
-}
-.text-primary-400 {
-  color: var(--clr-primary-400);
+.text-primary-800 {
+  color: var(--clr-primary-800);
 }
 .text-primary-900 {
   color: var(--clr-primary-900);
+}
+.text-accent-400 {
+  color: var(--clr-accent-400);
 }
 .text-neutral-100 {
   color: var(--clr-neutral-100);
@@ -107,25 +146,31 @@ body {
 .text-neutral-400 {
   color: var(--clr-neutral-400);
 }
+.text-neutral-500 {
+  color: var(--clr-neutral-500);
+}
 .text-neutral-900 {
   color: var(--clr-neutral-900);
 }
 
 /** Utility - Background Colours **/
-.bg-primary-100 {
-  background-color: var(--clr-primary-100);
-}
-.bg-primary-400 {
-  background-color: var(--clr-primary-400);
+.bg-primary-800 {
+  background-color: var(--clr-primary-800);
 }
 .bg-primary-900 {
   background-color: var(--clr-primary-900);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
 }
 .bg-neutral-100 {
   background-color: var(--clr-neutral-100);
 }
 .bg-neutral-400 {
   background-color: var(--clr-neutral-400);
+}
+.bg-neutral-500 {
+  background-color: var(--clr-neutral-500);
 }
 .bg-neutral-900 {
   background-color: var(--clr-neutral-900);
