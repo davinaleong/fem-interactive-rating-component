@@ -4,7 +4,7 @@ Another simple challenge from Frontend Mentor.
 
 The challenge can be found [here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
-Demo link coming soon!
+Demo page can be found [here](https://davinaleong.github.io/fem-interactive-rating-component/)!
 
 ## Getting Started
 
