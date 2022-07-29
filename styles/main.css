@@ -102,6 +102,46 @@ main {
 }
 
 /** Content - Form Inputs **/
+label,
+input[type="radio"],
+input[type="checkbox"],
+select {
+  cursor: pointer;
+}
+
+.form-rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-400);
+  width: 100%;
+}
+
+.form-rating-label {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  border-radius: 100vmax;
+}
+
+.form-rating-input {
+  display: none;
+}
+
+.form-rating-input:hover + .form-rating-label {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+}
+
+.form-rating-input:checked + .form-rating-label {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-500);
+}
+
 .form-button {
   display: block;
   width: 100%;
